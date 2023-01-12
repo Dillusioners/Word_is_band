@@ -67,7 +67,6 @@ void bellRing(int v[30][30]){
 						v[i][j - 1] += 1;
 						break;
 				}
-				v[i][j]--;
 			}
       
       // checks if a corner is hit
@@ -101,6 +100,7 @@ void bellRing(int v[30][30]){
 						}
 				}
 			}
+			v[i][j]--;
 		}
 	}
 }
